@@ -1,0 +1,96 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 29 12:45:37 2023
+| Host         : DESKTOP-5B44VDA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Proiect_portmapuri_control_sets_placed.rpt
+| Design       : Proiect_portmapuri
+| Device       : xc7a100t
+-----------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    29 |
+| Unused register locations in slices containing registers |   178 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |           19 |
+|      4 |            8 |
+|     10 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              29 |           23 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              21 |            9 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              24 |            6 |
+| Yes          | Yes                   | No                     |               4 |            2 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++------------------------------+----------------------+----------------------------+------------------+----------------+
+|         Clock Signal         |     Enable Signal    |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++------------------------------+----------------------+----------------------------+------------------+----------------+
+|  C1/enb_reg1v_reg_i_2_n_0    |                      |                            |                1 |              1 |
+|  C1/enb_reg1_reg_i_2_n_0     |                      |                            |                1 |              1 |
+|  C1/nxtstate_reg[3]_i_2_n_0  |                      | reset_IBUF                 |                1 |              1 |
+|  C1/enb_reg2_reg_i_2_n_0     |                      |                            |                1 |              1 |
+|  C1/enb_reg3_reg_i_2_n_0     |                      |                            |                1 |              1 |
+|  C1/enb_reg2v_reg_i_2_n_0    |                      |                            |                1 |              1 |
+|  C1/int_cifra_reg_i_2_n_0    |                      |                            |                1 |              1 |
+|  C1/reset_num15_reg_i_2_n_0  |                      |                            |                1 |              1 |
+|  C1/aux_reg_i_2_n_0          |                      |                            |                1 |              1 |
+|  C1/enb_reg3v_reg_i_2_n_0    |                      |                            |                1 |              1 |
+|  C1/liber_ocupat_reg_i_1_n_0 |                      |                            |                1 |              1 |
+|  disp/an_reg[7]_i_1_n_0      |                      | disp/an_reg[7]_i_2_n_0     |                1 |              1 |
+|  clk_IBUF_BUFG               |                      | C1/reset_regv_reg_i_1_n_0  |                1 |              1 |
+|  clk_IBUF_BUFG               |                      | C1/reset_reg_reg_i_1_n_0   |                1 |              1 |
+|  C1/nxtstate_reg[2]/G0       |                      |                            |                1 |              1 |
+|  C1/nxtstate_reg[3]/G0       |                      |                            |                1 |              1 |
+|  disp/an_reg[0]/G0           |                      |                            |                1 |              1 |
+|  disp/an_reg[1]/G0           |                      |                            |                1 |              1 |
+|  C1/nxtstate_reg[0]/G0       |                      |                            |                1 |              1 |
+|  disp/mux_reg[3]_i_2_n_0     |                      |                            |                4 |              4 |
+|  clk_IBUF_BUFG               | C2/numaux[3]_i_2_n_0 | C2/numaux[3]_i_1_n_0       |                2 |              4 |
+|  clk_IBUF_BUFG               | C1/E[0]              | C1/AR[0]                   |                1 |              4 |
+|  clk_IBUF_BUFG               | C1/state_reg[2]_1[0] | C1/reset_regv_reg_i_1_0[0] |                1 |              4 |
+|  clk_IBUF_BUFG               | C1/state_reg[2]_2[0] | C1/AR[0]                   |                1 |              4 |
+|  clk_IBUF_BUFG               | C1/state_reg[1]_0[0] | C1/reset_regv_reg_i_1_0[0] |                1 |              4 |
+|  clk_IBUF_BUFG               | C1/state_reg[2]_3[0] | C1/reset_regv_reg_i_1_0[0] |                1 |              4 |
+|  clk_IBUF_BUFG               | C1/state_reg[2]_0[0] | C1/AR[0]                   |                1 |              4 |
+|  clk_IBUF_BUFG               |                      |                            |                4 |             10 |
+|  clk_IBUF_BUFG               |                      | disp/clear                 |                5 |             17 |
++------------------------------+----------------------+----------------------------+------------------+----------------+
+
+
